@@ -1,0 +1,10 @@
+{
+  "rows": 7043,
+  "columns_raw": 21,
+  "unique_customer_ids": 7043,
+  "duplicate_customer_ids": 0,
+  "blank_total_charges": 11,
+  "churned_customers": 1869,
+  "retained_customers": 5174,
+  "churn_rate_pct": 26.54
+}

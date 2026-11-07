@@ -1,0 +1,8 @@
+{
+  "customers": 7043,
+  "churned_customers": 1869,
+  "overall_churn_rate_pct": 26.54,
+  "monthly_charges_associated_with_churned_customers": 139130.85,
+  "median_tenure_churned_months": 10.0,
+  "median_tenure_retained_months": 38.0
+}
