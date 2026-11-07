@@ -1,5 +1,7 @@
 # Customer Churn & Predictive Analytics
 
+**Live dashboard:** [customer-churn-predictive-analytics-ojirobe.streamlit.app](https://customer-churn-predictive-analytics-ojirobe.streamlit.app/)
+
 Project 4 of a five-project analytics portfolio. This repository implements a reproducible customer-retention workflow with SQL segmentation, statistical testing, leakage-controlled predictive modelling, validation-based campaign economics, explainability, an interactive dashboard, and automated tests.
 
 > IBM's sample is synthetic and cross-sectional. Results are educational and must not be treated as evidence about real customers or used for automated pricing, eligibility, service denial, or other consequential decisions.
