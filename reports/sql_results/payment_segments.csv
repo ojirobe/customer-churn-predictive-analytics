@@ -1,0 +1,9 @@
+payment_method,paperless_billing,customers,churn_rate_pct,monthly_charges_at_risk
+Electronic check,Yes,1742,49.77,69672.35
+Electronic check,No,623,32.74,14616.4
+Mailed check,Yes,656,27.29,10719.25
+Bank transfer (automatic),Yes,891,20.88,15540.55
+Credit card (automatic),Yes,882,19.05,13577.85
+Mailed check,No,956,13.49,6084.35
+Bank transfer (automatic),No,653,11.03,4551.35
+Credit card (automatic),No,640,10.0,4368.75

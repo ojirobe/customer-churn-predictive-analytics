@@ -1,0 +1,30 @@
+{
+  "split_design": "60% train, 20% validation, 20% final test; all stratified with fixed seed",
+  "temporal_limitation": "The source has no observation date, so this does not estimate future-period drift.",
+  "training_rows": 4225,
+  "validation_rows": 1409,
+  "test_rows": 1409,
+  "test_churn_prevalence": 0.2654364797728886,
+  "roc_auc": 0.8425146606732284,
+  "pr_auc_average_precision": 0.6338258764410437,
+  "brier_score": 0.1379361434585896,
+  "baseline_brier": 0.19497996730765563,
+  "validation_selected_threshold": 0.07,
+  "precision": 0.37733887733887733,
+  "recall": 0.9705882352941176,
+  "balanced_accuracy": 0.6959221369707304,
+  "confusion_matrix": {
+    "true_negative": 436,
+    "false_positive": 599,
+    "false_negative": 11,
+    "true_positive": 363
+  },
+  "test_campaign_value_assumptions": {
+    "contact_cost": 10.0,
+    "save_rate": 0.3,
+    "retained_months": 6,
+    "gross_margin": 0.6,
+    "illustrative_net_value": 18855.766
+  },
+  "not_for_automated_consequential_decisions": true
+}

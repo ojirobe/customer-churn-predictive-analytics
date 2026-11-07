@@ -1,0 +1,23 @@
+{
+  "contract_vs_churn_chi_square": {
+    "statistic": 1184.5965720837926,
+    "p_value": 5.863038300673393e-258,
+    "degrees_of_freedom": 2,
+    "cramers_v": 0.4101156965761409
+  },
+  "tenure_churned_vs_retained_mann_whitney": {
+    "statistic": 2515538.0,
+    "p_value": 2.419635517951866e-208,
+    "rank_biserial": -0.4797343510572577,
+    "churned_median": 10.0,
+    "retained_median": 38.0
+  },
+  "monthly_charges_churned_vs_retained_mann_whitney": {
+    "statistic": 6003125.5,
+    "p_value": 3.311627651988586e-54,
+    "rank_biserial": 0.24157137914125104,
+    "churned_median": 79.65,
+    "retained_median": 64.42500000000001
+  },
+  "caution": "Associations in synthetic cross-sectional data are not causal effects."
+}

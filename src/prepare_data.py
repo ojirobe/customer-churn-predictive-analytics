@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 from pathlib import Path
 
 import pandas as pd
@@ -11,6 +12,7 @@ RAW_PATH = ROOT / "data" / "raw" / "Telco-Customer-Churn.csv"
 PROCESSED_DIR = ROOT / "data" / "processed"
 PROCESSED_PATH = PROCESSED_DIR / "customers.csv"
 QUALITY_PATH = PROCESSED_DIR / "data_quality.json"
+DATABASE_PATH = PROCESSED_DIR / "churn.db"
 
 EXPECTED_COLUMNS = {
     "customerID", "gender", "SeniorCitizen", "Partner", "Dependents", "tenure",
@@ -53,6 +55,10 @@ def main() -> None:
     frame, quality = load_and_validate()
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     frame.to_csv(PROCESSED_PATH, index=False)
+    with sqlite3.connect(DATABASE_PATH) as connection:
+        frame.to_sql("customers", connection, if_exists="replace", index=False)
+        connection.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_customer_id ON customers(customerID)")
+        connection.execute("CREATE INDEX IF NOT EXISTS idx_churn ON customers(churn_flag)")
     QUALITY_PATH.write_text(json.dumps(quality, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(quality, indent=2))
 

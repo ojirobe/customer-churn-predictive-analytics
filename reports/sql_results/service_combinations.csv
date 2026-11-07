@@ -1,0 +1,10 @@
+internet_service,tech_support,online_security,customers,churn_rate_pct
+Fiber optic,No,No,1765,55.01
+DSL,No,No,788,35.41
+Fiber optic,Yes,No,492,29.07
+Fiber optic,No,Yes,465,27.96
+DSL,Yes,No,453,15.01
+DSL,No,Yes,455,14.51
+Fiber optic,Yes,Yes,374,14.17
+No,No internet service,No internet service,1526,7.4
+DSL,Yes,Yes,725,6.34
